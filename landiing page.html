@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TBook - Borrow and Read Books</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700&family=Cardo:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cardo: ['Cardo', 'serif'],
+            anybody: ['Anybody', 'cursive'],
+            opensans: ['Open Sans', 'sans-serif'],
+          },
+          colors: {
+            primary: '#6A4D3B',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white font-opensans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-primary text-white">
+    <div class="text-2xl font-cardo">tbook</div>
+    <div class="hidden md:flex space-x-6 text-sm font-bold">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Contact Us</a>
+      <button class="bg-white text-primary px-4 py-1 rounded-full hover:bg-gray-200 font-bold">Register</button>
+      <button class="border border-white px-4 py-1 rounded-full hover:bg-gray-700 font-bold">Login</button>
+    </div>
+  </nav>
+
+   <!-- Hero Section -->
+   <section class="bg-primary text-white text-center py-20 relative">
+    <div class="text-4xl md:text-5xl font-anybody mb-4">
+      borrow and <br> read books for <br> free !!
+    </div>
+    <!-- Gambar Buku -->
+    <img src="your-book-image.png" alt="Book" class="w-52 md:w-72 absolute right-8 top-10 hidden md:block">
+  </section>
+
+  <!-- Category Section -->
+  <section class="px-6 md:px-16 py-10">
+    <h2 class="text-2xl font-bold mb-4">Category</h2>
+    <div class="flex gap-4 flex-wrap">
+      <button class="bg-primary text-white px-6 py-2 rounded-full hover:bg-[#5a3b2a] font-bold">All</button>
+      <button class="bg-gray-200 text-primary px-6 py-2 rounded-full hover:bg-gray-300 font-bold">Fantasy</button>
+      <button class="bg-gray-200 text-primary px-6 py-2 rounded-full hover:bg-gray-300 font-bold">Romance</button>
+      <button class="bg-gray-200 text-primary px-6 py-2 rounded-full hover:bg-gray-300 font-bold">Mystery</button>
+      <button class="bg-gray-200 text-primary px-6 py-2 rounded-full hover:bg-gray-300 font-bold">Adventure</button>
+    </div>
+  </section>
+
+  <!-- Popular Books Section -->
+  <section class="px-6 md:px-16 py-10 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-6">Popular Books</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Card Buku 1 -->
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="book-image1.png" alt="Book 1" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-lg font-bold mb-2">Book Title</h3>
+        <p class="text-sm text-gray-600">Author Name</p>
+      </div>
+
+      <!-- Card Buku 2 -->
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="book-image2.png" alt="Book 2" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-lg font-bold mb-2">Book Title</h3>
+        <p class="text-sm text-gray-600">Author Name</p>
+      </div>
+
+      <!-- Card Buku 3 -->
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="book-image3.png" alt="Book 3" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-lg font-bold mb-2">Book Title</h3>
+        <p class="text-sm text-gray-600">Author Name</p>
+      </div>
+
+      <!-- Card Buku 4 -->
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="book-image4.png" alt="Book 4" class="w-full h-48 object-cover mb-4 rounded">
+        <h3 class="text-lg font-bold mb-2">Book Title</h3>
+        <p class="text-sm text-gray-600">Author Name</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
